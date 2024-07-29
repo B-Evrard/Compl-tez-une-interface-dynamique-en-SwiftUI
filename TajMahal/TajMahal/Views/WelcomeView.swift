@@ -12,6 +12,7 @@ struct WelcomeView: View {
     var body: some View {
         NavigationStack {
             Image("TajMahal")
+                
             Spacer()
             NavigationLink {
                 MenuView()
