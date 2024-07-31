@@ -12,29 +12,35 @@ struct WelcomeView: View {
     var body: some View {
         
         NavigationStack {
-            VStack (alignment: .leading){
-                Image("TajMahal")
-                
-                VStack (alignment: .leading) {
-                    Text( "Restaurant Indien")
-                        .font( .custom("PlusJakartaSans", size: 12))
-                      
-                    Text( "Taj Mahal")
-                        .font( .custom("PlusJakartaSans", size: 18))
-                    
-                       
-                    Image("Logo")
-                    Image("Logo")
-                }
-                Spacer()
-                NavigationLink {
-                    MenuView()
-                } label : {
-                    Text("Menu")
-                }
-            }
             
+            Image("TajMahal")
+                .padding(.bottom)
+               
+            WelcomeHeaderView()
+            
+            WelcomeBodyView()
+            
+            NavigationLink {
+                MenuView()
+            } label : {
+                
+               
+                Text("Accéder au menu")
+                    .font( .custom("PlusJakartaDisplay-Bold", size: 18))
+                    .foregroundStyle (.white)
+                    .frame(width: 337, height: 40, alignment: .center)
+                    .background(Color.customRed)
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                    
+               
+                
+                    
+            }
+           
         }
+        
+            
+        
     }
 }
 

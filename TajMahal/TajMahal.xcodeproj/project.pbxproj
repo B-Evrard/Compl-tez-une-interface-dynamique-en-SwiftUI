@@ -14,6 +14,10 @@
 		42E9DCB52AF11138007CE7D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42E9DCB42AF11138007CE7D0 /* Preview Assets.xcassets */; };
 		42E9DCBF2AF11439007CE7D0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */; };
 		42E9DCC22AF117AE007CE7D0 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DCC12AF117AE007CE7D0 /* MenuView.swift */; };
+		FE3F0EDF2C5A17E700C70E28 /* WelcomeBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3F0EDE2C5A17E700C70E28 /* WelcomeBodyView.swift */; };
+		FEDE4BB42C58C7A9001C6ADC /* PlusJakartaSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FEDE4BB32C58C7A9001C6ADC /* PlusJakartaSans.ttf */; };
+		FEDE4BB82C58DE66001C6ADC /* WelcomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDE4BB72C58DE66001C6ADC /* WelcomeHeaderView.swift */; };
+		FEDE4BBA2C591B8D001C6ADC /* PlusJakartaDisplay-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FEDE4BB92C591B8D001C6ADC /* PlusJakartaDisplay-Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		42E9DCC02AF11662007CE7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		42E9DCC12AF117AE007CE7D0 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		FE3F0EDE2C5A17E700C70E28 /* WelcomeBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeBodyView.swift; sourceTree = "<group>"; };
+		FEDE4BB32C58C7A9001C6ADC /* PlusJakartaSans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlusJakartaSans.ttf; sourceTree = "<group>"; };
+		FEDE4BB72C58DE66001C6ADC /* WelcomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeHeaderView.swift; sourceTree = "<group>"; };
+		FEDE4BB92C591B8D001C6ADC /* PlusJakartaDisplay-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaDisplay-Bold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				42E9DCC02AF11662007CE7D0 /* Info.plist */,
+				FEDE4BBB2C591B99001C6ADC /* Fonts */,
 				42E9DCBB2AF113D1007CE7D0 /* Views */,
 				42E9DCAD2AF11136007CE7D0 /* TajMahalApp.swift */,
 				42E9DCB12AF11138007CE7D0 /* Assets.xcassets */,
@@ -80,10 +89,29 @@
 		42E9DCBB2AF113D1007CE7D0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */,
+				FEDE4BB62C58DE0A001C6ADC /* Welcome */,
 				42E9DCC12AF117AE007CE7D0 /* MenuView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FEDE4BB62C58DE0A001C6ADC /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */,
+				FEDE4BB72C58DE66001C6ADC /* WelcomeHeaderView.swift */,
+				FE3F0EDE2C5A17E700C70E28 /* WelcomeBodyView.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		FEDE4BBB2C591B99001C6ADC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FEDE4BB32C58C7A9001C6ADC /* PlusJakartaSans.ttf */,
+				FEDE4BB92C591B8D001C6ADC /* PlusJakartaDisplay-Bold.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,8 +172,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEDE4BBA2C591B8D001C6ADC /* PlusJakartaDisplay-Bold.otf in Resources */,
 				42E9DCB52AF11138007CE7D0 /* Preview Assets.xcassets in Resources */,
 				42E9DCB22AF11138007CE7D0 /* Assets.xcassets in Resources */,
+				FEDE4BB42C58C7A9001C6ADC /* PlusJakartaSans.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +187,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				428D2B532AFA882700BBA4F5 /* ViewModel.swift in Sources */,
+				FE3F0EDF2C5A17E700C70E28 /* WelcomeBodyView.swift in Sources */,
 				42E9DCBF2AF11439007CE7D0 /* WelcomeView.swift in Sources */,
+				FEDE4BB82C58DE66001C6ADC /* WelcomeHeaderView.swift in Sources */,
 				42E9DCC22AF117AE007CE7D0 /* MenuView.swift in Sources */,
 				42E9DCAE2AF11136007CE7D0 /* TajMahalApp.swift in Sources */,
 				428D2B512AFA851900BBA4F5 /* Model.swift in Sources */,
@@ -294,7 +326,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TajMahal/Preview Content\"";
-				DEVELOPMENT_TEAM = 6FH7WNJPHQ;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TajMahal/Info.plist;
@@ -323,7 +355,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TajMahal/Preview Content\"";
-				DEVELOPMENT_TEAM = 6FH7WNJPHQ;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TajMahal/Info.plist;
