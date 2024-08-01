@@ -10,7 +10,7 @@ import SwiftUI
 struct WelcomeHeaderView: View {
     var body: some View {
         
-        HStack {
+        HStack(alignment: .top) {
            
             VStack (alignment: .leading ) {
                 
@@ -20,21 +20,20 @@ struct WelcomeHeaderView: View {
                 
                 Text( "Taj Mahal")
                     .font( .custom("PlusJakartaDisplay-Bold", size: 18))
-                   
-               
+                    
             }
-            Spacer()
+            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity,alignment: .topLeading)
+            
+            //Spacer()
+            
             Image("Logo")
                 .resizable()
                 .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
                 .frame(width: 40, height: 40)
-                
-               
-            
-        }
-        .fixedSize(horizontal: false, vertical: true)
-        .frame(maxWidth: 337)
+       }
+        .frame(maxWidth: 337,maxHeight: 40,alignment: .top)
         .padding(.bottom)
+        
     }
 }
 
@@ -43,10 +42,4 @@ struct WelcomeHeaderView: View {
 }
 
 
-/*
- .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
- .padding()
- .frame(width: 40, height: 40)
- .resizable()
- .scaledToFit()
- */
+
