@@ -14,10 +14,14 @@
 		42E9DCB52AF11138007CE7D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42E9DCB42AF11138007CE7D0 /* Preview Assets.xcassets */; };
 		42E9DCBF2AF11439007CE7D0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */; };
 		42E9DCC22AF117AE007CE7D0 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DCC12AF117AE007CE7D0 /* MenuView.swift */; };
+		FE33FAB62C5E693E000A7030 /* PlusJakartaText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FE33FAB52C5E693E000A7030 /* PlusJakartaText-Regular.otf */; };
+		FE33FABA2C5E6A6F000A7030 /* PlusJakartaText-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FE33FAB92C5E6A6F000A7030 /* PlusJakartaText-Bold.otf */; };
+		FE33FABD2C5E6CEF000A7030 /* PlusJakartaDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FE33FABB2C5E6CEF000A7030 /* PlusJakartaDisplay-Regular.otf */; };
+		FE33FABE2C5E6CEF000A7030 /* PlusJakartaDisplay-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FE33FABC2C5E6CEF000A7030 /* PlusJakartaDisplay-Bold.otf */; };
+		FE38865E2C64E7A6001B05F4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE38865D2C64E7A6001B05F4 /* DetailView.swift */; };
 		FE3F0EDF2C5A17E700C70E28 /* WelcomeBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3F0EDE2C5A17E700C70E28 /* WelcomeBodyView.swift */; };
-		FEDE4BB42C58C7A9001C6ADC /* PlusJakartaSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FEDE4BB32C58C7A9001C6ADC /* PlusJakartaSans.ttf */; };
+		FE96733B2C5B7EEE003DF7C1 /* MenuViewLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE96733A2C5B7EEE003DF7C1 /* MenuViewLine.swift */; };
 		FEDE4BB82C58DE66001C6ADC /* WelcomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDE4BB72C58DE66001C6ADC /* WelcomeHeaderView.swift */; };
-		FEDE4BBA2C591B8D001C6ADC /* PlusJakartaDisplay-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FEDE4BB92C591B8D001C6ADC /* PlusJakartaDisplay-Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +34,14 @@
 		42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		42E9DCC02AF11662007CE7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		42E9DCC12AF117AE007CE7D0 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		FE33FAB52C5E693E000A7030 /* PlusJakartaText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaText-Regular.otf"; sourceTree = "<group>"; };
+		FE33FAB92C5E6A6F000A7030 /* PlusJakartaText-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaText-Bold.otf"; sourceTree = "<group>"; };
+		FE33FABB2C5E6CEF000A7030 /* PlusJakartaDisplay-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaDisplay-Regular.otf"; sourceTree = "<group>"; };
+		FE33FABC2C5E6CEF000A7030 /* PlusJakartaDisplay-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaDisplay-Bold.otf"; sourceTree = "<group>"; };
+		FE38865D2C64E7A6001B05F4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		FE3F0EDE2C5A17E700C70E28 /* WelcomeBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeBodyView.swift; sourceTree = "<group>"; };
-		FEDE4BB32C58C7A9001C6ADC /* PlusJakartaSans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlusJakartaSans.ttf; sourceTree = "<group>"; };
+		FE96733A2C5B7EEE003DF7C1 /* MenuViewLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewLine.swift; sourceTree = "<group>"; };
 		FEDE4BB72C58DE66001C6ADC /* WelcomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeHeaderView.swift; sourceTree = "<group>"; };
-		FEDE4BB92C591B8D001C6ADC /* PlusJakartaDisplay-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaDisplay-Bold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,10 +97,28 @@
 		42E9DCBB2AF113D1007CE7D0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FE38865C2C64E77E001B05F4 /* Detail */,
 				FEDE4BB62C58DE0A001C6ADC /* Welcome */,
-				42E9DCC12AF117AE007CE7D0 /* MenuView.swift */,
+				FE9673392C5B7E79003DF7C1 /* Menu */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FE38865C2C64E77E001B05F4 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				FE38865D2C64E7A6001B05F4 /* DetailView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		FE9673392C5B7E79003DF7C1 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				42E9DCC12AF117AE007CE7D0 /* MenuView.swift */,
+				FE96733A2C5B7EEE003DF7C1 /* MenuViewLine.swift */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		FEDE4BB62C58DE0A001C6ADC /* Welcome */ = {
@@ -108,8 +134,10 @@
 		FEDE4BBB2C591B99001C6ADC /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				FEDE4BB32C58C7A9001C6ADC /* PlusJakartaSans.ttf */,
-				FEDE4BB92C591B8D001C6ADC /* PlusJakartaDisplay-Bold.otf */,
+				FE33FAB52C5E693E000A7030 /* PlusJakartaText-Regular.otf */,
+				FE33FABC2C5E6CEF000A7030 /* PlusJakartaDisplay-Bold.otf */,
+				FE33FABB2C5E6CEF000A7030 /* PlusJakartaDisplay-Regular.otf */,
+				FE33FAB92C5E6A6F000A7030 /* PlusJakartaText-Bold.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -172,10 +200,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEDE4BBA2C591B8D001C6ADC /* PlusJakartaDisplay-Bold.otf in Resources */,
+				FE33FABE2C5E6CEF000A7030 /* PlusJakartaDisplay-Bold.otf in Resources */,
+				FE33FABA2C5E6A6F000A7030 /* PlusJakartaText-Bold.otf in Resources */,
+				FE33FAB62C5E693E000A7030 /* PlusJakartaText-Regular.otf in Resources */,
 				42E9DCB52AF11138007CE7D0 /* Preview Assets.xcassets in Resources */,
+				FE33FABD2C5E6CEF000A7030 /* PlusJakartaDisplay-Regular.otf in Resources */,
 				42E9DCB22AF11138007CE7D0 /* Assets.xcassets in Resources */,
-				FEDE4BB42C58C7A9001C6ADC /* PlusJakartaSans.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,8 +219,10 @@
 				428D2B532AFA882700BBA4F5 /* ViewModel.swift in Sources */,
 				FE3F0EDF2C5A17E700C70E28 /* WelcomeBodyView.swift in Sources */,
 				42E9DCBF2AF11439007CE7D0 /* WelcomeView.swift in Sources */,
+				FE38865E2C64E7A6001B05F4 /* DetailView.swift in Sources */,
 				FEDE4BB82C58DE66001C6ADC /* WelcomeHeaderView.swift in Sources */,
 				42E9DCC22AF117AE007CE7D0 /* MenuView.swift in Sources */,
+				FE96733B2C5B7EEE003DF7C1 /* MenuViewLine.swift in Sources */,
 				42E9DCAE2AF11136007CE7D0 /* TajMahalApp.swift in Sources */,
 				428D2B512AFA851900BBA4F5 /* Model.swift in Sources */,
 			);
@@ -330,6 +362,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TajMahal/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -359,6 +392,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TajMahal/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

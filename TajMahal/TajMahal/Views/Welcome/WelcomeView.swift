@@ -17,11 +17,15 @@ struct WelcomeView: View {
                 .resizable()
                 .frame(width: 335, height: 423)
                 .padding(.bottom)
-               
+            
             WelcomeHeaderView()
+            
+            Spacer()
+                .frame(height: 30)
             
             WelcomeBodyView()
             
+            Spacer()
             NavigationLink {
                 MenuView()
             } label : {
@@ -31,10 +35,13 @@ struct WelcomeView: View {
                     .frame(width: 337, height: 40, alignment: .center)
                     .background(Color.customRed)
                     .clipShape(RoundedRectangle(cornerRadius: 10))
-                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity,alignment: .bottom)
-           
+                
+                
             }
+            
            
+            
+            
         }
     }
 }

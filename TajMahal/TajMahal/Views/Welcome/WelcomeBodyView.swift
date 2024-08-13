@@ -12,26 +12,25 @@ struct WelcomeBodyView: View {
         
         
         VStack {
-            
+            Spacer()
             // Ligne Horaire
             HStack {
                 Image(systemName: "clock")
                     .resizable()
                     .frame(width: 12,height: 12)
                 
-                Text("Mardi")
-                    .font( .custom("PlusJakartaSans", size: 12))
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                
-                //Spacer()
+                Text(ViewModel.nameDay())
+                    .font( .custom("PlusJakartaText-Regular", size: 12))
+
+                Spacer(minLength: 100)
                 
                 Text ("11h30 - 14h30 • 18h30 - 22h00")
-                    .font( .custom("PlusJakartaSans", size: 12))
-                    .fixedSize()
+                    .font( .custom("PlusJakartaText-Regular", size: 12))
+                    
                     
             }
-            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity,alignment: .topLeading)
-            
+            Spacer()
+                .frame(height: 12)
             
             // Service
             HStack {
@@ -40,16 +39,16 @@ struct WelcomeBodyView: View {
                     .frame(width: 14,height: 14)
                 
                 Text("Type de service")
-                    .font( .custom("PlusJakartaSans", size: 12))
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .font( .custom("PlusJakartaText-Regular", size: 12))
                 
-                //Spacer()
+                Spacer()
                 
                 Text ("À emporter")
-                    .font( .custom("PlusJakartaSans", size: 12))
+                    .font( .custom("PlusJakartaText-Regular", size: 12))
                     .fixedSize()
             }
-            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity,alignment: .topLeading)
+            Spacer()
+                .frame(height: 12)
             
             // ligne adresse - Site - Tel
             VStack(alignment: .leading) {
@@ -60,13 +59,13 @@ struct WelcomeBodyView: View {
                         .frame(width: 14,height: 14)
                     
                     Text("12 Avenue de la Brique - 75010 Paris")
-                        .font( .custom("PlusJakartaSans", size: 12))
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                    
-                    //Spacer()
+                        .font( .custom("PlusJakartaText-Regular", size: 12))
+                  
+                    Spacer()
                     
                 }
-                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity,alignment: .topLeading)
+                Spacer()
+                    .frame(height: 12)
                 
                 HStack {
                     Image(systemName: "globe")
@@ -74,26 +73,30 @@ struct WelcomeBodyView: View {
                         .frame(width: 14,height: 14)
                     
                     Text("www.tajmahal.fr")
-                        .font( .custom("PlusJakartaSans", size: 12))
-                    
+                        .tint(.black)
+                        .font( .custom("PlusJakartaText-Regular", size: 12))
+                   
                 }
-                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity,alignment: .topLeading)
-                
+                Spacer()
+                    .frame(height: 12)
                 HStack {
-                    Image(systemName: "phone")
+                    
+                    Image("Phone")
                         .resizable()
-                        .frame(width: 14,height: 14)
+                        .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
+                        .foregroundColor(.black)
+                        .frame(width: 14, height: 14)
                     
                     Text("06 12 34 56 78")
-                        .font( .custom("PlusJakartaSans", size: 12))
-                }
-                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity,alignment: .topLeading)
+                        .font( .custom("PlusJakartaText-Regular", size: 12))
                 
+                }
+                Spacer()
+              
                 
             }
         }
-        .fixedSize(horizontal: false, vertical: true)
-        .frame(maxWidth: 337)
+        .frame(width: 337, height: 130)
         
        
     }

@@ -4,7 +4,8 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>PlusJakartaSans[wght].ttf</string>
+		<string>PlusJakartaText-Regular.otf</string>
+		<string>PlusJakartaText-Bold.otf</string>
 		<string>PlusJakartaDisplay-Bold.otf</string>
 	</array>
 	<key>UILaunchScreen</key>
