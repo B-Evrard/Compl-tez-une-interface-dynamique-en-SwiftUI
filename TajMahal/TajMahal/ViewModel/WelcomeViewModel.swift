@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+public class WelcomeViewModel  {
+   
+    func nameDay() -> String {
+        return Utils.sharedInstance.nameDay()
+    }
+    
+}

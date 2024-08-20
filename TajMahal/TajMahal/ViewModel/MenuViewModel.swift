@@ -10,7 +10,7 @@ import Foundation
 
 // Strcture qui gère toute la logique du code
 // Fait l'intermédiaire entre l'affichage et les données
-struct ViewModel {
+struct MenuViewModel {
     
     // Stocke les entrées qui composent le menu du restaurant
     let apetizerArray : [Dish] =
@@ -24,7 +24,7 @@ struct ViewModel {
      Dish(name: "Biryani aux légumes", description: "Riz parfumé cuit avec des légumes et des épices", allergens: "Noix de cajou, riz", ingredients: "Riz basmati, légumes assortis (carottes, petits pois, haricots verts), noix de cajou, raisins secs, gingembre, poudre de curcuma, poudre de cumin, poudre de coriandre, piment en poudre", spiceLevel: .medium, imageName: "Biryani",price: 10.50),
      Dish(name: "Rogan Josh", description: "Agneau mijoté dans une sauce épicée", allergens: "Ail, oignon", ingredients: "Agneau, oignons, ail, gingembre, poudre de curcuma, poudre de cumin, poudre de coriandre, piment en poudre, tomates en purée, huile, coriandre fraîche", spiceLevel: .hot, imageName: "Rogan Josh",price: 14.50),]
     
-    let utils = Utils.sharedInstance
+   
     
 }
 

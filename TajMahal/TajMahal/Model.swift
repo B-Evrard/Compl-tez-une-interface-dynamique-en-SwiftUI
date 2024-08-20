@@ -23,4 +23,17 @@ struct Dish {
     var spiceLevel: SpiceLevel
     var imageName: String
     var price: Float
+    
+    func isHot() -> Bool {
+        return self.spiceLevel == SpiceLevel.hot
+    }
+    
+   func isMedium() -> Bool {
+       return self.spiceLevel == SpiceLevel.medium
+    }
+    
+    func isLight() -> Bool {
+        return self.spiceLevel == SpiceLevel.light
+    }
+    
 }

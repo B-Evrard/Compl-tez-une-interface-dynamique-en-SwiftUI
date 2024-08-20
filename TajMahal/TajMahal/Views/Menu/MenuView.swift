@@ -11,72 +11,72 @@ import SwiftUI
 struct MenuView: View {
     
     // Référence vers le view model qui permet d'accéder aux tableaux d'entrées et de plats du menu
-    let viewModel: ViewModel = ViewModel()
-    @Environment(\.presentationMode) var presentationMode
+    let menuViewModel: MenuViewModel = MenuViewModel()
+    
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         
-        NavigationView {
-            
-            
-            
+        
+        NavigationStack {
+
             List {
                 // Créer la liste des entrées
-                CreateDishList(dishs: viewModel.apetizerArray, titreSection: "Entrées")
+                DishList(dishs: menuViewModel.apetizerArray, titreSection: "Entrées")
                 
                 // Créer la liste des plats principaux
-                CreateDishList(dishs: viewModel.mainCourseArray, titreSection: "Plats principaux")
+                DishList(dishs: menuViewModel.mainCourseArray, titreSection: "Plats principaux")
             }
-            .listRowBackground(Color.blue)
             .headerProminence(.increased)
-            .listRowSpacing(15)
+            .listRowSpacing(12)
+        }.toolbar {
             
+            ToolbarItem(placement: .topBarLeading) {
+                Button {
+                    dismiss()
+                } label: {
+                    Image(systemName: "chevron.backward")
+                        .foregroundColor(.black)
+                }
+                
+            }
             
-            
-            
+            ToolbarItem(placement: .principal) {
+                Button {
+                    dismiss()
+                } label: {
+                    Text("Menu")
+                        .font( .custom("PlusJakartaText-Regular", size: 18))
+                        .foregroundColor(.black)
+                }
+            }
         }
         .navigationBarBackButtonHidden(true)
-        .navigationBarTitle("Menu", displayMode: .inline)
-        .navigationBarItems(leading: Button(action: {
-            self.presentationMode.wrappedValue.dismiss()
-        }) {
-            HStack {
-                Image(systemName: "chevron.backward")
-                    .foregroundColor(.black)
-            }
-        })
+        
         
     }
-    
-    
-    
-    
-    
-    
-    
 }
 
 #Preview {
     MenuView()
 }
 
-/// Création de la liste des plats
 
-struct CreateDishList: View {
+struct DishList: View {
     
     var dishs: [Dish]
     var titreSection = ""
     
     var body: some View {
-        Section(header:
-                    Text(titreSection)
-            .font( .custom("PlusJakartaText-bold", size: 14))
-        ) {
-            
+        
+        Section (header: Text(titreSection)
+            .font( .custom("PlusJakartaText-Bold", size: 14))
+            .foregroundColor(.greyTajMahal)) {
+ 
             ForEach(dishs, id: \.name) { dish in
-                
+               
                 // Zstack permet de cacher le chevron dans la liste avec .opacity(0)
-                ZStack(alignment: .leading) {
+                ZStack() {
                     
                     MenuViewLine(dish: dish)
                     NavigationLink (destination: DetailView(dish: dish))  {
@@ -90,4 +90,5 @@ struct CreateDishList: View {
             }
         }
     }
+    
 }

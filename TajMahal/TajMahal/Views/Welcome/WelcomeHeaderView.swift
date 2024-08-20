@@ -13,22 +13,20 @@ struct WelcomeHeaderView: View {
         HStack(alignment: .top) {
             
             VStack (alignment: .leading ) {
-                
                 Text( "Restaurant Indien")
                     .font( .custom("PlusJakartaText-Regular", size: 12 ))
+                    .foregroundColor(.greyTajMahal)
                 
                 Text( "Taj Mahal")
                     .font( .custom("PlusJakartaText-Bold", size: 18))
-                
-                
             }
             
             Spacer()
             
-            Image("Logo")                
+            Image("Logo")
                 .resizable()
                 .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
-                .foregroundColor(.gray)
+                .foregroundColor(.greyTajMahal)
                 .frame(width: 40, height: 40)
             
         }

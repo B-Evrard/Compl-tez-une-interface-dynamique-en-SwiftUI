@@ -8,36 +8,40 @@
 import SwiftUI
 
 struct WelcomeBodyView: View {
+    
+    let welcomeViewModel: WelcomeViewModel = WelcomeViewModel()
+    
     var body: some View {
-        
         
         VStack {
             Spacer()
-            // Ligne Horaire
+            
             HStack {
                 Image(systemName: "clock")
                     .resizable()
                     .frame(width: 12,height: 12)
                 
-                Text(ViewModel.nameDay())
+                Text(welcomeViewModel.nameDay())
                     .font( .custom("PlusJakartaText-Regular", size: 12))
-
-                Spacer(minLength: 100)
+                 
+                Spacer()
                 
                 Text ("11h30 - 14h30 • 18h30 - 22h00")
                     .font( .custom("PlusJakartaText-Regular", size: 12))
                     
-                    
+                
             }
-            Spacer()
-                .frame(height: 12)
+            .foregroundColor(.greyTajMahal)
             
-            // Service
+            Spacer()
+                .frame(height: 14)
+            
             HStack {
                 Image("Food")
+                    .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
                     .resizable()
                     .frame(width: 14,height: 14)
-                
+        
                 Text("Type de service")
                     .font( .custom("PlusJakartaText-Regular", size: 12))
                 
@@ -45,12 +49,13 @@ struct WelcomeBodyView: View {
                 
                 Text ("À emporter")
                     .font( .custom("PlusJakartaText-Regular", size: 12))
-                    .fixedSize()
+                   
             }
-            Spacer()
-                .frame(height: 12)
+            .foregroundColor(.greyTajMahal)
             
-            // ligne adresse - Site - Tel
+            Spacer()
+                .frame(height: 14)
+        
             VStack(alignment: .leading) {
                 
                 HStack {
@@ -60,12 +65,13 @@ struct WelcomeBodyView: View {
                     
                     Text("12 Avenue de la Brique - 75010 Paris")
                         .font( .custom("PlusJakartaText-Regular", size: 12))
-                  
+                    
                     Spacer()
                     
                 }
+                
                 Spacer()
-                    .frame(height: 12)
+                    .frame(height: 14)
                 
                 HStack {
                     Image(systemName: "globe")
@@ -73,32 +79,29 @@ struct WelcomeBodyView: View {
                         .frame(width: 14,height: 14)
                     
                     Text("www.tajmahal.fr")
-                        .tint(.black)
+                        .tint(.greyTajMahal)
                         .font( .custom("PlusJakartaText-Regular", size: 12))
-                   
-                }
-                Spacer()
-                    .frame(height: 12)
-                HStack {
                     
+                }
+                
+                Spacer()
+                    .frame(height: 14)
+                
+                HStack {
                     Image("Phone")
                         .resizable()
                         .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
-                        .foregroundColor(.black)
                         .frame(width: 14, height: 14)
                     
                     Text("06 12 34 56 78")
                         .font( .custom("PlusJakartaText-Regular", size: 12))
-                
+                    
                 }
                 Spacer()
-              
-                
             }
         }
         .frame(width: 337, height: 130)
-        
-       
+        .foregroundColor(.greyTajMahal)
     }
 }
 
