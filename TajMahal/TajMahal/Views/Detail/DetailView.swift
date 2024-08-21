@@ -16,68 +16,12 @@ struct DetailView: View {
     var body: some View {
         NavigationView {
             
-            VStack   {
-                ZStack (alignment: .topTrailing) {
-                    Image(dish.imageName)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 335)
-                        .clipShape(RoundedRectangle(cornerRadius: 10))
-                    
-                    HStack {
-                        
-                        Image ("pepper")
-                            .resizable()
-                            .renderingMode(.template)
-                            .foregroundColor(.customRed)
-                            .frame(width: 14, height: 14)
-                        
-                        
-                        Image ("pepper")
-                            .resizable()
-                            .renderingMode(.template)
-                            .foregroundColor(dish.isHot() || dish.isMedium() ? .customRed : .greyTajMahal)
-                            .frame(width: 14, height: 14)
-                        
-                        Image ("pepper")
-                            .resizable()
-                            .renderingMode(.template)
-                            .foregroundColor(dish.isHot() ? .customRed : .greyTajMahal )
-                            .frame(width: 14, height: 14)
-                    }
-                    .frame(width: 74 ,height: 22)
-                    .background(Color.white)
-                    .clipShape(RoundedRectangle(cornerRadius: 10))
-                    .padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 10))
-                    
-                }
-                .padding(20)
-                
-                
-                
-                VStack  (alignment: .leading ){
-                    Text("Allergènes:")
-                        .font( .custom("PlusJakartaText-Bold", size: 12))
-                        .foregroundColor(.greyTajMahal)
-                        .frame(height: 14)
-                    Text(dish.allergens)
-                        .font( .custom("PlusJakartaText-Regular", size: 12))
-                        .foregroundColor(.greyTajMahal)
-                        .frame(height: 14)
-                    Divider()
-                        .frame(height: 14)
-                    Text("Ingrédients:")
-                        .font( .custom("PlusJakartaText-Bold", size: 12))
-                        .foregroundColor(.greyTajMahal)
-                        .frame(height: 14)
-                    Text(dish.ingredients)
-                        .font( .custom("PlusJakartaText-Regular", size: 12))
-                        .foregroundColor(.greyTajMahal)
-                }
-                .padding(20)
-              
+            VStack {
+                Picture(dish: dish)
+                Description(dish: dish)
+                Spacer()
             }
-
+            
         }.toolbar {
             
             ToolbarItem(placement: .topBarLeading) {
@@ -95,9 +39,67 @@ struct DetailView: View {
             
         }
         .navigationBarBackButtonHidden(true)
+        Spacer()
     }
- }
+}
 
 #Preview {
-    DetailView(dish: MenuViewModel().mainCourseArray[0])
+    DetailView(dish: MenuViewModel().mainCourseArray[2])
+}
+
+struct Picture: View {
+    
+    var dish: Dish
+    
+    var body: some View {
+        ZStack (alignment: .topTrailing) {
+            
+            Image(dish.imageName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .clipShape(RoundedRectangle(cornerRadius: 10))
+            
+            SpicyView(numberPeppers: dish.numberPeppers, width: 14, height: 14)
+                .frame(width: 74 ,height: 22)
+                .background(Color.white)
+                .clipShape(RoundedRectangle(cornerRadius: 10))
+                .padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 10))
+            
+        }
+        .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
+    }
+}
+
+
+struct Description: View {
+    
+    var dish: Dish
+    
+    var body: some View {
+       
+        VStack  (alignment: .leading ){
+            Text("Allergènes:")
+                .font( .custom("PlusJakartaText-Bold", size: 12))
+                .foregroundColor(.greyTajMahal)
+            Spacer().frame(height: 14)
+            Text(dish.allergens)
+                .font( .custom("PlusJakartaText-Regular", size: 12))
+                .foregroundColor(.greyTajMahal)
+            Spacer().frame(height: 14)
+            
+            Divider()
+                .frame(height: 14)
+           
+            Text("Ingrédients:")
+                .font( .custom("PlusJakartaText-Bold", size: 12))
+                .foregroundColor(.greyTajMahal)
+            Spacer().frame(height: 14)
+            
+            Text(dish.ingredients)
+                .font( .custom("PlusJakartaText-Regular", size: 12))
+                .foregroundColor(.greyTajMahal)
+                
+          }
+        .padding(20)
+    }
 }

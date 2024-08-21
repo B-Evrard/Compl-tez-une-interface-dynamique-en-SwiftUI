@@ -34,34 +34,13 @@ struct MenuViewLine: View {
                Spacer()
                 
                 HStack(alignment: .center) {
-                    Text (Utils.formatPrice(price: dish.price))
+                    Text (dish.formattedPrice)
                         .font( .custom("PlusJakartaText-Regular", size: 12))
                         .foregroundColor(.greyTajMahal)
                     
                     Spacer()
-                    
-                    Image ("pepper")
-                        .resizable()
-                        .renderingMode(.template)
-                        .foregroundColor(.customRed)
-                        .frame(width: 12, height: 12)
-                    
-                    Image ("pepper")
-                        .resizable()
-                        .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
-                        .foregroundColor(dish.isHot() || dish.isMedium() ? .customRed : .greyTajMahal)
-                        .frame(width: 12, height: 12)
-                    
-                    
-                    Image ("pepper")
-                        .resizable()
-                        .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
-                        .foregroundColor(dish.isHot() ? .customRed : .greyTajMahal)
-                        .frame(width: 12, height: 12)
-                    
-                    
+                    SpicyView(numberPeppers: dish.numberPeppers, width: 12, height: 12)
                 }
-                
             }
             .frame(height: 86)
             

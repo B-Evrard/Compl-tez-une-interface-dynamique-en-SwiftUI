@@ -7,9 +7,9 @@
 
 import Foundation
 
-public class Utils {
+class Utils {
     
-    public static let sharedInstance = Utils()
+    static let sharedInstance = Utils()
     
     private init() {
         

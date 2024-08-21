@@ -7,12 +7,12 @@
 
 import SwiftUI
 
+// Référence vers le view model qui permet d'accéder aux tableaux d'entrées et de plats du menu
+let menuViewModel: MenuViewModel = MenuViewModel()
+
 // Menu sous forme de liste
 struct MenuView: View {
-    
-    // Référence vers le view model qui permet d'accéder aux tableaux d'entrées et de plats du menu
-    let menuViewModel: MenuViewModel = MenuViewModel()
-    
+
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
@@ -85,8 +85,6 @@ struct DishList: View {
                     .opacity(0) // Cache le chevron
                     
                 }
-                
-                
             }
         }
     }

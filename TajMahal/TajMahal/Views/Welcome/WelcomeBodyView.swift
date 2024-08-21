@@ -81,7 +81,6 @@ struct WelcomeBodyView: View {
                     Text("www.tajmahal.fr")
                         .tint(.greyTajMahal)
                         .font( .custom("PlusJakartaText-Regular", size: 12))
-                    
                 }
                 
                 Spacer()

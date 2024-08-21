@@ -25,6 +25,8 @@ struct WelcomeView: View {
             WelcomeBodyView()
                 .padding(EdgeInsets(top: 32, leading: 20, bottom: 0, trailing: 20))
             
+            Spacer()
+            
             NavigationLink {
                 MenuView()
             } label : {
@@ -34,8 +36,7 @@ struct WelcomeView: View {
                     .frame(width: 335, height: 40, alignment: .center)
                     .background(Color.customRed)
                     .clipShape(RoundedRectangle(cornerRadius: 10))
-                    .padding(EdgeInsets(top: 32, leading: 20, bottom: 0, trailing: 20))
-            }
+            }.safeAreaPadding(.bottom,8)
         }
     }
 }

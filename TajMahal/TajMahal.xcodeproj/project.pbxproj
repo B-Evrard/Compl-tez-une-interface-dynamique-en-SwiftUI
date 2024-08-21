@@ -18,6 +18,7 @@
 		FE33FABA2C5E6A6F000A7030 /* PlusJakartaText-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FE33FAB92C5E6A6F000A7030 /* PlusJakartaText-Bold.otf */; };
 		FE38865E2C64E7A6001B05F4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE38865D2C64E7A6001B05F4 /* DetailView.swift */; };
 		FE3F0EDF2C5A17E700C70E28 /* WelcomeBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3F0EDE2C5A17E700C70E28 /* WelcomeBodyView.swift */; };
+		FE4D0B042C75CF970052421C /* SpicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4D0B032C75CF970052421C /* SpicyView.swift */; };
 		FE84924E2C6C9F7B00A8CE5C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE84924D2C6C9F7B00A8CE5C /* Utils.swift */; };
 		FE96733B2C5B7EEE003DF7C1 /* MenuViewLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE96733A2C5B7EEE003DF7C1 /* MenuViewLine.swift */; };
 		FEB01C002C6E439B00C6A0AA /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB01BFF2C6E439B00C6A0AA /* WelcomeViewModel.swift */; };
@@ -38,6 +39,7 @@
 		FE33FAB92C5E6A6F000A7030 /* PlusJakartaText-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaText-Bold.otf"; sourceTree = "<group>"; };
 		FE38865D2C64E7A6001B05F4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		FE3F0EDE2C5A17E700C70E28 /* WelcomeBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeBodyView.swift; sourceTree = "<group>"; };
+		FE4D0B032C75CF970052421C /* SpicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpicyView.swift; sourceTree = "<group>"; };
 		FE84924D2C6C9F7B00A8CE5C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		FE96733A2C5B7EEE003DF7C1 /* MenuViewLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewLine.swift; sourceTree = "<group>"; };
 		FEB01BFF2C6E439B00C6A0AA /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		42E9DCBB2AF113D1007CE7D0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FE4D0B022C75CEFB0052421C /* Common */,
 				FE38865C2C64E77E001B05F4 /* Detail */,
 				FEDE4BB62C58DE0A001C6ADC /* Welcome */,
 				FE9673392C5B7E79003DF7C1 /* Menu */,
@@ -111,6 +114,14 @@
 				FE38865D2C64E7A6001B05F4 /* DetailView.swift */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		FE4D0B022C75CEFB0052421C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FE4D0B032C75CF970052421C /* SpicyView.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		FE9673392C5B7E79003DF7C1 /* Menu */ = {
@@ -223,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				428D2B532AFA882700BBA4F5 /* MenuViewModel.swift in Sources */,
+				FE4D0B042C75CF970052421C /* SpicyView.swift in Sources */,
 				FE3F0EDF2C5A17E700C70E28 /* WelcomeBodyView.swift in Sources */,
 				42E9DCBF2AF11439007CE7D0 /* WelcomeView.swift in Sources */,
 				FE38865E2C64E7A6001B05F4 /* DetailView.swift in Sources */,
@@ -366,7 +378,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TajMahal/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = C3825553HQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TajMahal/Info.plist;
@@ -375,12 +387,13 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.amandinecousin.TajMahal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brunoevrard.TajMahal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -396,7 +409,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TajMahal/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = C3825553HQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TajMahal/Info.plist;
@@ -405,12 +418,13 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.amandinecousin.TajMahal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brunoevrard.TajMahal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

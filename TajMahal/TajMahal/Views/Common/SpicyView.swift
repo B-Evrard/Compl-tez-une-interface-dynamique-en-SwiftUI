@@ -7,9 +7,14 @@
 
 import SwiftUI
 
+///  Shows the spice level as chili peppers
 struct SpicyView: View {
+    
+    var numberPeppers: Int
+    var width: CGFloat
+    var height: CGFloat
+    
     var body: some View {
-        var 
         
         HStack {
             
@@ -17,23 +22,23 @@ struct SpicyView: View {
                 .resizable()
                 .renderingMode(.template)
                 .foregroundColor(.customRed)
-                .frame(width: 14, height: 14)
+                .frame(width: width, height: height)
             
             Image ("pepper")
                 .resizable()
                 .renderingMode(.template)
-                .foregroundColor(dish.isHot || dish.isMedium ? .customRed : .greyTajMahal)
-                .frame(width: 14, height: 14)
+                .foregroundColor(numberPeppers>1 ? .customRed : .greyTajMahal)
+                .frame(width: width, height: height)
             
             Image ("pepper")
                 .resizable()
                 .renderingMode(.template)
-                .foregroundColor(dish.isHot ? .customRed : .greyTajMahal )
-                .frame(width: 14, height: 14)
+                .foregroundColor(numberPeppers>2 ? .customRed : .greyTajMahal )
+                .frame(width: width, height: height)
         }
     }
 }
 
 #Preview {
-    SpicyView()
+    SpicyView(numberPeppers: 2, width: 12, height: 12)
 }

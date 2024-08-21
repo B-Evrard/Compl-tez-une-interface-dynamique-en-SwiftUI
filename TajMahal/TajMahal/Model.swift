@@ -24,16 +24,16 @@ struct Dish {
     var imageName: String
     var price: Float
     
-    func isHot() -> Bool {
-        return self.spiceLevel == SpiceLevel.hot
+    var numberPeppers: Int {
+        switch self.spiceLevel{
+        case .hot: return 3
+        case .medium: return 2
+        case .light: return 1
+        }
     }
     
-   func isMedium() -> Bool {
-       return self.spiceLevel == SpiceLevel.medium
-    }
-    
-    func isLight() -> Bool {
-        return self.spiceLevel == SpiceLevel.light
+    var formattedPrice: String {
+        return Utils.formatPrice(price: self.price)
     }
     
 }
