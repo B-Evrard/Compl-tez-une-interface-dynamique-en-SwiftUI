@@ -21,10 +21,9 @@ struct MenuView: View {
         NavigationStack {
 
             List {
-                // Créer la liste des entrées
+                
                 DishList(dishs: menuViewModel.apetizerArray, titreSection: "Entrées")
                 
-                // Créer la liste des plats principaux
                 DishList(dishs: menuViewModel.mainCourseArray, titreSection: "Plats principaux")
             }
             .headerProminence(.increased)
@@ -75,14 +74,14 @@ struct DishList: View {
  
             ForEach(dishs, id: \.name) { dish in
                
-                // Zstack permet de cacher le chevron dans la liste avec .opacity(0)
+                // Zstack Allows hiding the chevron in the list with .opacity(0)
                 ZStack() {
                     
                     MenuViewLine(dish: dish)
                     NavigationLink (destination: DetailView(dish: dish))  {
                         EmptyView()
                     }
-                    .opacity(0) // Cache le chevron
+                    .opacity(0) // Hide the chevron
                     
                 }
             }

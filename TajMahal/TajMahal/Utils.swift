@@ -18,7 +18,7 @@ class Utils {
     /// Returns the price in the form xx.xx €
     /// - Parameter price:
     /// - Returns: The price in €xx.xx format
-    static func formatPrice(price: Float) -> String {
+    func formatPrice(price: Float) -> String {
         return "\(String(format: "%.2f", price)) €"
     }
 

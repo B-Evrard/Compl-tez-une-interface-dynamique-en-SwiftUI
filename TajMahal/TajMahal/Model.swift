@@ -33,7 +33,7 @@ struct Dish {
     }
     
     var formattedPrice: String {
-        return Utils.formatPrice(price: self.price)
+        return Utils.sharedInstance.formatPrice(price: self.price)
     }
     
 }
