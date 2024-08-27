@@ -37,7 +37,7 @@ struct WelcomeBodyView: View {
                 .frame(height: 14)
             
             HStack {
-                Image("Food")
+                Image("food")
                     .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
                     .resizable()
                     .frame(width: 14,height: 14)

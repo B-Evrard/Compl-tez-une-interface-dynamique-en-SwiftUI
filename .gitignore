@@ -68,5 +68,4 @@ fastlane/screenshots/**/*.png
 fastlane/test_output
 
 # Ajout BE
-
-*.DS_Store
+.DS_Store
